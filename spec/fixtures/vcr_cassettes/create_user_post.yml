@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.medium.com/v1/users/1b619f0be1bc842ffc55e8a20c7d6c9129ba896467b90ab9e23b86a36fdd2a67e/posts
+    body:
+      encoding: UTF-8
+      string: title=Test%20Title&content=%3Ch1%3ETest%20Title%3C%2Fh1%3E&contentFormat=html
+    headers:
+      Authorization:
+      - Bearer 2ada46c383ae76af4ca4dcbe42f7611062644f366bd6281c2efe78202b35f3c60
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 09 Dec 2021 03:49:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '358'
+      Connection:
+      - keep-alive
+      Sepia-Upstream:
+      - medium
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      Location:
+      - https://medium.com/@nmisharin/test-title-695e96144fba
+      Medium-Fulfilled-By:
+      - valencia/main-20211209-014605-5c8156f7e8
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - uid=lo_399a25f6c7c8; Path=/; Domain=medium.com; Expires=Fri, 09 Dec 2022 03:49:51
+        GMT; HttpOnly; Secure
+      X-Envoy-Upstream-Service-Time:
+      - '702'
+      X-Obvious-Info:
+      - 20211209-0205-root,5c8156f7
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"3bddd99333835ec7","ot-tracer-traceid":"507cc65fd8f3c327","ot-tracer-sampled":"true"}'
+      X-Powered-By:
+      - Medium
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6bab4412cd2f238c-HKG
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"695e96144fba","title":"Test Title","authorId":"1b619f0be1bc842ffc55e8a20c7d6c9129ba896467b90ab9e23b86a36fdd2a67e","url":"https://medium.com/@nmisharin/test-title-695e96144fba","canonicalUrl":"","publishStatus":"","publishedAt":1639021791859,"license":"","licenseUrl":"https://policy.medium.com/medium-terms-of-service-9db0094a1e0f","tags":[]}}'
+  recorded_at: Thu, 09 Dec 2021 03:49:50 GMT
+recorded_with: VCR 6.0.0

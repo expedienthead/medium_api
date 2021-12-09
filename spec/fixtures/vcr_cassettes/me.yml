@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.medium.com/v1/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 2ada46c383ae76af4ca4dcbe42f7611062644f366bd6281c2efe78202b35f3c60
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Dec 2021 08:10:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Sepia-Upstream:
+      - medium
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      Medium-Fulfilled-By:
+      - valencia/main-20211206-194809-70209e8310
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - uid=lo_2767694c7973; Path=/; Domain=medium.com; Expires=Thu, 08 Dec 2022 08:10:59
+        GMT; HttpOnly; Secure
+      X-Envoy-Upstream-Service-Time:
+      - '32'
+      X-Obvious-Info:
+      - 20211207-1907-root,eeb69155
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"1275915f10175e7c","ot-tracer-traceid":"7eeeffd9cf74d0f2","ot-tracer-sampled":"true"}'
+      X-Powered-By:
+      - Medium
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ba4853879492374-HKG
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1b619f0be1bc842ffc55e8a20c7d6c9129ba896467b90ab9e23b86a36fdd2a67e","username":"nmisharin","name":"Test
+        Api Key","url":"https://medium.com/@nmisharin","imageUrl":"https://cdn-images-1.medium.com/fit/c/400/400/1*dmbNkD5D-u45r44go_cf0g.png"}}'
+  recorded_at: Wed, 08 Dec 2021 08:10:57 GMT
+recorded_with: VCR 6.0.0
